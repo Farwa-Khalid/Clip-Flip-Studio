@@ -1,0 +1,492 @@
+
+/* =========================
+   HERO SECTION
+========================= */
+.service-hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 150px 20px 100px 20px;
+  background: linear-gradient(135deg, #000, #111);
+}
+
+.hero-box {
+  background: linear-gradient(145deg, #1C1C1C, #222);
+  padding: 60px 40px;
+  border-radius: 20px;
+  text-align: center;
+  max-width: 800px;
+  box-shadow: 0 10px 40px rgba(255, 215, 0, 0.15); /* subtle yellow glow */
+  transition: transform 0.4s ease, box-shadow 0.4s ease, background 0.4s ease;
+  cursor: pointer;
+}
+
+.hero-box h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  background: linear-gradient(90deg, #FFD700, #CFAF67); /* yellow gradient */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.hero-box p {
+  font-size: 1.2rem;
+  color: #ccc;
+  line-height: 1.6;
+}
+
+/* Hover Effect for Hero Box */
+.hero-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 20px 60px rgba(255, 215, 0, 0.3); /* stronger yellow glow */
+  background: linear-gradient(145deg, #222, #2a2a2a);
+}
+
+/* =========================
+   WHAT’S INCLUDED - SPLIT MODERN (YELLOW HIGHLIGHTS)
+========================= */
+.included-services {
+  padding: 100px 20px;
+  background: linear-gradient(135deg, #111, #1C1C1C);
+}
+
+.services-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  max-width: 1200px;
+  margin: auto;
+  flex-wrap: wrap-reverse;
+}
+
+/* Left side image */
+.services-image {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.services-image img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 20px;
+  box-shadow: 0 20px 50px rgba(255, 215, 0, 0.1); /* yellow glow */
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.services-image img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 30px 70px rgba(255, 215, 0, 0.25);
+}
+
+/* Right side cards */
+.services-cards {
+  flex: 1;
+  min-width: 300px;
+}
+
+.services-cards h2 {
+  font-size: 2.5rem;
+  color: #FFD700; /* yellow heading */
+  margin-bottom: 40px;
+  text-align: left;
+}
+
+/* Cards Grid */
+.services-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+/* Individual Card Styling */
+.card {
+  background-color: rgba(0,0,0,0.85);
+  backdrop-filter: blur(2px);
+  border-radius: 16px;
+  padding: 25px 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  transition: transform 0.4s ease, box-shadow 0.4s ease, background 0.4s ease;
+  cursor: default;
+  position: relative;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.1rem;
+  color: #fff;
+  font-weight: 500;
+}
+
+.card::before {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover effect - yellow highlights */
+.card:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 20px 50px rgba(255, 215, 0, 0.3);
+}
+
+.card:hover::before {
+  filter: grayscale(0%); /* icon fully visible in original colors */
+  transform: scale(1.2);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .services-container {
+    flex-direction: column-reverse;
+    gap: 40px;
+  }
+
+  .services-cards h2 {
+    text-align: center;
+  }
+}
+
+/* =========================
+   PROCESS SECTION
+========================= */
+
+.process {
+  padding: 120px 20px;
+  background: linear-gradient(135deg, #0a0a0a, #111);
+  color: #fff;
+  text-align: center;
+}
+
+.process h2 {
+  font-size: 3rem;
+  color: #FFD700;
+  margin-bottom: 80px;
+  letter-spacing: 2px;
+}
+
+/* Layout */
+.process-steps {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* Individual Step */
+.process-step {
+  width: 220px;
+  text-align: center;
+  position: relative;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.6s ease;
+}
+
+/* Icon Image */
+.process-icon {
+  width: 90px;
+  height: 90px;
+  margin: 0 auto 25px auto;
+  border-radius: 50%;
+  background: rgba(255, 215, 0, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s ease;
+}
+
+/* Style the SVG inside */
+.process-icon svg {
+  width: 36px;
+  height: 36px;
+  stroke: #FFD700;
+  stroke-width: 2;
+}
+
+/* Premium glow on hover */
+.process-step:hover .process-icon {
+  transform: scale(1.12);
+  box-shadow: 0 0 25px rgba(255, 215, 0, 0.5);
+  background: rgba(255, 215, 0, 0.15);
+}
+
+.process-step h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+/* Floating Animation */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+/* Connecting Line */
+.process-step::after {
+  content: '';
+  position: absolute;
+  top: 40px;
+  left: 100%;
+  width: 80px;
+  height: 3px;
+  background: linear-gradient(to right, #FFD700, transparent);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.6s ease;
+}
+
+.process-step:last-child::after {
+  display: none;
+}
+
+/* Reveal Animation */
+.process-step.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.process-step.visible::after {
+  transform: scaleX(1);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .process-steps {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .process-step::after {
+    display: none;
+  }
+}
+
+/* =========================
+   BENEFITS SECTION
+========================= */
+.benefits {
+  padding: 120px 20px;
+  background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+  text-align: center;
+}
+
+.benefits h2 {
+  font-size: 3rem;
+  margin-bottom: 80px;
+  letter-spacing: 2px;
+  color: #FFD700;
+}
+
+/* Grid Layout */
+.benefits-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 60px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Individual Benefit */
+.benefit-item {
+  max-width: 250px;
+  text-align: center;
+  color: #fff;
+  opacity: 0;
+  transform: translateY(40px);
+  animation: fadeUp 0.8s ease forwards;
+}
+
+/* Staggered Animation */
+.benefit-item:nth-child(1) { animation-delay: 0.2s; }
+.benefit-item:nth-child(2) { animation-delay: 0.4s; }
+.benefit-item:nth-child(3) { animation-delay: 0.6s; }
+.benefit-item:nth-child(4) { animation-delay: 0.8s; }
+
+/* Icon */
+.benefit-icon {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 30px auto;
+  border-radius: 50%;
+  background: rgba(255, 215, 0, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  color: #FFD700;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  animation: float 4s ease-in-out infinite;
+}
+
+.benefit-item:hover .benefit-icon {
+  transform: scale(1.15);
+  box-shadow: 0 0 30px rgba(255, 215, 0, 0.4);
+}
+
+/* Title */
+.benefit-item h3 {
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+/* Description */
+.benefit-item p {
+  font-size: 1rem;
+  color: #ccc;
+  line-height: 1.6;
+}
+
+/* Fade Up Animation */
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Subtle Floating Animation */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .benefits-grid {
+    gap: 40px;
+  }
+}
+
+/* =========================
+   OUR WORK GRID
+========================= */
+.our-work h2 {
+ font-size: 2.5rem;
+  color: #FFD700; /* yellow heading */
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.work-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.work-box {
+  background: rgba(0,0,0,0.85);
+  backdrop-filter: grayscale(100%) blur(2px);
+  border-radius: 16px;
+  width: 250px;
+  height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.work-box:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 20px 50px rgba(255,215,0,0.3);
+}
+
+/* =========================
+   CTA
+========================= */
+.cta {
+  background: linear-gradient(135deg, #111, #1C1C1C);
+  text-align: center;
+  padding: 80px 20px;
+  border-radius: 12px;
+  
+}
+
+.cta h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.cta p {
+  font-size: 1.2rem;
+  color: #ccc;
+  margin-bottom: 30px;
+}
+.cta-btn{
+  display: inline-block;
+  text-decoration: none;
+  background: linear-gradient(90deg, #FFD700, #CFAF67);
+  color: #000;
+  padding: 16px 34px;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 1.05rem;
+  cursor: pointer;
+
+  position: relative;
+  z-index: 999;
+
+  transition: all 0.35s ease;
+}
+
+/* Glow layer */
+.cta-btn::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50px;
+  background: linear-gradient(90deg,#FFD700,#CFAF67,#FFD700);
+  filter: blur(12px);
+  opacity: 0;
+  transition: opacity 0.35s ease;
+  z-index: -1;
+}
+
+/* Hover effect */
+.cta-btn:hover{
+  transform: translateY(-4px) scale(1.03);
+  box-shadow: 0 15px 40px rgba(255,215,0,0.45);
+}
+
+.cta-btn:hover::before{
+  opacity: 0.7;
+}
+
+
+
+/* Special layout when there are 5 cards */
+.included-services-5 .services-container{
+  align-items: flex-start;
+}
+
+/* Make image area slightly larger */
+.included-services-5 .services-image{
+  flex: 1.2;
+}
+
+/* Slightly reduce card column width */
+.included-services-5 .services-cards{
+  flex: 0.9;
+}
+
+/* Allow image to grow more */
+.included-services-5 .services-image img{
+  max-width: 650px;
+}
