@@ -342,7 +342,7 @@ a {
 }
 /* Brands Marquee Section */
 .brands-marquee {
-  background-color: #000;
+  background-color: #1C1C1C;
   color: #fff;
   padding: 60px 0;
   overflow: hidden;
@@ -611,127 +611,122 @@ a {
 /* =========================
    SERVICES SECTION
 ========================= */
-
-.services-section{
-background: #000;
-padding:100px 20px;
-text-align:center;
+/* SERVICES SECTION */
+.services-section {
+  background: #000;
+  padding: 100px 20px;
+  text-align: center;
 }
 
-.services-section h2{
-font-size:3rem;
-margin-bottom:70px;
+.services-section h2 {
+  font-size: 3rem;
+  margin-bottom: 70px;
 
-background:linear-gradient(90deg,#FFD700,#CFAF67);
--webkit-background-clip:text;
--webkit-text-fill-color:transparent;
-background-clip:text;
-color:transparent;
+  background: linear-gradient(90deg, #FFD700, #CFAF67);
+  
+  /* Clip background to text */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  /* For Firefox fallback */
+  background-clip: text;  /* Firefox may ignore this */
+  color: transparent;
 }
 
 /* GRID */
-
-.services-grid-new{
-    max-width:1200px;
-    margin:auto;
-    display:grid;
-    grid-template-columns: repeat(5, 1fr); /* 5 columns in one row */
-    gap:35px;
+.services-grid {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 80px; /* spacing between services */
 }
 
 /* CARD */
-
-.service-card{
-position:relative;
-padding:2px;
-border-radius:14px;
-
-background:linear-gradient(
-120deg,
-#FFD700,
-#CFAF67,
-#FFD700
-);
-
-background-size:200% 200%;
-
-transition:all .4s ease;
+.service-card {
+  position: relative;
+  border-radius: 14px;
+  background: linear-gradient(120deg, #FFD700, #CFAF67, #FFD700);
+  padding: 2px;
+  transition: all 0.4s ease;
 }
 
 /* INNER CARD */
-
-.service-inner{
-background:#111;
-padding:40px 30px;
-border-radius:12px;
-height:100%;
-transition:all .4s ease;
+.service-inner {
+  background: #111;
+  padding: 40px 30px;
+  border-radius: 12px;
+  transition: all 0.4s ease;
 }
 
 /* TITLE */
-
-.service-inner h3{
-color:#FFD700;
-font-size:1.6rem;
-margin-bottom:15px;
+.service-inner h3 {
+  color: #FFD700;
+  font-size: 1.8rem;
+  margin-bottom: 15px;
 }
 
 /* TEXT */
+.service-inner p {
+  color: #ddd;
+  line-height: 1.7;
+  font-size: 1rem;
+  margin-bottom: 25px;
+}
 
-.service-inner p{
-color:#ddd;
-line-height:1.7;
-font-size:1rem;
+/* VIDEO GRID */
+.service-videos {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.service-videos iframe {
+  width: 360px;
+  height: 200px;
+  border-radius: 8px;
+  border: none;
+  transition: transform 0.3s ease;
+}
+
+.service-videos iframe:hover {
+  transform: scale(1.05);
 }
 
 /* HOVER EFFECT */
-
-.service-card:hover{
-transform:translateY(-10px) scale(1.02);
-box-shadow:0 20px 40px rgba(255,215,0,0.25);
-background-position:right center;
+.service-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 20px 40px rgba(255, 215, 0, 0.25);
+  background-position: right center;
 }
 
-/* INNER HOVER */
-
-.service-card:hover .service-inner{
-background:#0a0a0a;
+.service-card:hover .service-inner {
+  background: #0a0a0a;
 }
 
 /* FLOATING EFFECT */
-
-.service-card{
-animation:floatService 5s ease-in-out infinite;
+@keyframes floatService {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-6px); }
+  100% { transform: translateY(0px); }
 }
 
-.service-card:nth-child(2){
-animation-delay:1s;
+.service-card {
+  animation: floatService 5s ease-in-out infinite;
 }
 
-.service-card:nth-child(3){
-animation-delay:2s;
+.service-card:nth-child(2) { animation-delay: 1s; }
+.service-card:nth-child(3) { animation-delay: 2s; }
+.service-card:nth-child(4) { animation-delay: 1.5s; }
+.service-card:nth-child(5) { animation-delay: 0.5s; }
+
+/* RESPONSIVE */
+@media (max-width: 1200px) {
+  .service-videos iframe { width: 300px; height: 170px; }
 }
 
-.service-card:nth-child(4){
-animation-delay:1.5s;
-}
-
-.service-card:nth-child(5){
-animation-delay:.5s;
-}
-
-@keyframes floatService{
-
-0%{
-transform:translateY(0px);
-}
-
-50%{
-transform:translateY(-6px);
-}
-
-100%{
-transform:translateY(0px);
-}
-
+@media (max-width: 900px) {
+  .service-videos { flex-direction: column; gap: 25px; }
+  .service-videos iframe { width: 100%; height: 200px; }
 }
