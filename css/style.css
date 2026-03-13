@@ -54,7 +54,7 @@ a {
 .site-header .logo img {
   height: 90px;
   width: auto;
-  transform: scale(2.5,2);   /* scaleX , scaleY */
+  transform: scale(2.5,2.5);   /* scaleX , scaleY */
   transform-origin: center;
 }
 
