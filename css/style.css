@@ -52,7 +52,7 @@ a {
   margin-left: 50px;
 }
 .site-header .logo img {
-  height: 90px;
+  height: 60px;
   width: auto;
   transform: scale(2.5,2.5);   /* scaleX , scaleY */
   transform-origin: center;
