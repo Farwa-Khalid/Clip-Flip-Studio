@@ -8,13 +8,13 @@
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Cinzel', sans-serif;
   background-color: #000;
   color: #fff;
 }
 
 h1, h2, h3 {
-  font-family: 'Cinzel', serif;
+  font-family: 'Montserrat', serif;
 }
 
 a {
@@ -244,6 +244,15 @@ a {
   color: #fff;
   max-width: 700px;
 }
+.hero-overlay img {
+  max-width: 300px;        /* Maximum size of the logo */
+  width: 80%;               /* Responsive width */
+  height: auto;             /* Maintain aspect ratio */
+  display: block;
+  margin: 0 auto;  
+  opacity: 50%;
+
+}
 
 /* =========================
    4. WHAT WE DO (Text)
@@ -316,8 +325,9 @@ a {
 
 /* Hover Effect - lift + shadow only */
 .team-image img:hover {
-  transform: translateY(-8px) scale(1.03); /* Slight lift & scale */
-  box-shadow: 0 12px 25px rgba(255, 215, 0, 0.2); /* Soft gold shadow */
+ transform: translateY(-8px) scale(1.03); /* Slight lift & scale */
+  filter: grayscale(0%) brightness(1.05); /* remove grayscale + brighten */
+  box-shadow: 0 12px 25px rgba(255, 215, 0, 0.5); 
 }
 .team-text {
   max-width: 700px;
