@@ -2,48 +2,146 @@
 /* =========================
    HERO SECTION
 ========================= */
-.service-hero {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 150px 20px 100px 20px;
-  background: linear-gradient(135deg, #000, #111);
+/* HERO SECTION */
+
+.service-hero{
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  display:flex;
+  align-items:center;
+  justify-content:center;
 }
 
-.hero-box {
-  background: linear-gradient(145deg, #1C1C1C, #222);
-  padding: 60px 40px;
-  border-radius: 20px;
-  text-align: center;
-  max-width: 800px;
-  box-shadow: 0 10px 40px rgba(255, 215, 0, 0.15); /* subtle yellow glow */
-  transition: transform 0.4s ease, box-shadow 0.4s ease, background 0.4s ease;
-  cursor: pointer;
+/* slideshow container */
+
+.hero-slideshow{
+  position:absolute;
+  width:100%;
+  height:100%;
+  top:0;
+  left:0;
+}
+
+/* images */
+
+.slide{
+  position:absolute;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  opacity:0;
+  transition: opacity 1.5s ease;
+}
+
+/* active slide */
+
+.slide.active{
+  opacity:1;
+}
+
+/* dark overlay */
+
+.service-hero::after{
+  content:"";
+  position:absolute;
+  width:100%;
+  height:100%;
+  background: rgba(0,0,0,0.55);
+  top:0;
+  left:0;
+}
+
+/* hero text */
+
+.hero-box{
+  position:relative;
+  z-index:2;
+  text-align:center;
+  padding:40px;
 }
 
 .hero-box h1 {
-  font-size: 3rem;
-  margin-bottom: 20px;
-  background: linear-gradient(90deg, #FFD700, #CFAF67); /* yellow gradient */
+  font-size: 3.5rem;
+
+  background: linear-gradient(90deg,#FFD700,#CFAF67);
+
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   background-clip: text;
+
+  -webkit-text-fill-color: transparent;
   color: transparent;
 }
 
-.hero-box p {
-  font-size: 1.2rem;
-  color: #ccc;
-  line-height: 1.6;
+.hero-box p{
+  color:#ddd;
+  margin-top:15px;
+  font-size:1.2rem;
 }
 
-/* Hover Effect for Hero Box */
-.hero-box:hover {
-  transform: scale(1.05);
-  box-shadow: 0 20px 60px rgba(255, 215, 0, 0.3); /* stronger yellow glow */
-  background: linear-gradient(145deg, #222, #2a2a2a);
+
+/* VIDEO SECTION */
+
+/* SECTION */
+
+.service-videos{
+  padding:120px 8%;
+  background:#000;
+  position:relative;
 }
 
+/* wrapper */
+
+.video-wrapper{
+  position:relative;
+}
+
+/* BIG BACKGROUND HEADING */
+.service-videos h2{
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 60px;
+
+  background: linear-gradient(90deg,#FFD700,#CFAF67);
+
+  background-clip: text;
+  -webkit-background-clip: text;
+
+  color: transparent;
+}
+
+/* VIDEO GRID */
+
+.video-grid{
+  position:relative;
+  z-index:2;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:40px;
+}
+
+/* ELONGATED VIDEO CARD */
+
+.video-card{
+  width: 450px;
+  border-radius:16px;
+  overflow:hidden;
+  box-shadow:0 15px 50px rgba(255,215,0,0.15);
+  transition:transform .4s ease;
+}
+
+.video-card:hover{
+  transform:scale(1.05);
+}
+
+/* WIDESCREEN VIDEO */
+
+.video-card iframe{
+  width:100%;
+  height:320px;
+  border:none;
+}
 /* =========================
    WHAT’S INCLUDED - SPLIT MODERN (YELLOW HIGHLIGHTS)
 ========================= */
