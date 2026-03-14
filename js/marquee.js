@@ -1,3 +1,4 @@
-
 const track = document.querySelector(".marquee-track");
-track.innerHTML += track.innerHTML; // duplicate logos automatically
+const clone = track.cloneNode(true);
+clone.setAttribute("aria-hidden", "true");
+track.parentNode.appendChild(clone);
