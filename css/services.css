@@ -63,6 +63,7 @@
 }
 
 .hero-box h1 {
+   font-family: 'Montserrat', sans-serif;
   font-size: 3.5rem;
 
   background: linear-gradient(90deg,#FFD700,#CFAF67);
@@ -75,6 +76,7 @@
 }
 
 .hero-box p{
+   font-family: 'Cinzel', serif;
   color:#ddd;
   margin-top:15px;
   font-size:1.2rem;
@@ -99,16 +101,14 @@
 
 /* BIG BACKGROUND HEADING */
 .service-videos h2{
+  font-family: 'Montserrat', sans-serif;
   text-align: center;
   font-size: 3rem;
   margin-bottom: 60px;
-
-  background: linear-gradient(90deg,#FFD700,#CFAF67);
+  color: #FFD700;
 
   background-clip: text;
   -webkit-background-clip: text;
-
-  color: transparent;
 }
 
 /* VIDEO GRID */
@@ -215,7 +215,7 @@
   transition: transform 0.4s ease, box-shadow 0.4s ease, background 0.4s ease;
   cursor: default;
   position: relative;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Cinzel', serif;
   font-size: 1.1rem;
   color: #fff;
   font-weight: 500;
@@ -251,6 +251,7 @@
   }
 
   .services-cards h2 {
+    font-family: 'Montserrat', sans-serif;
     text-align: center;
   }
 }
@@ -267,6 +268,7 @@
 }
 
 .process h2 {
+  font-family: 'Montserrat', sans-serif;
   font-size: 3rem;
   color: #FFD700;
   margin-bottom: 80px;
@@ -323,6 +325,7 @@
 }
 
 .process-step h3 {
+  font-family: 'Cinzel', serif;
   font-size: 1.1rem;
   font-weight: 600;
 }
@@ -383,6 +386,7 @@
 }
 
 .benefits h2 {
+  font-family: 'Montserrat', sans-serif;
   font-size: 3rem;
   margin-bottom: 80px;
   letter-spacing: 2px;
@@ -438,6 +442,7 @@
 
 /* Title */
 .benefit-item h3 {
+  
   font-size: 1.3rem;
   margin-bottom: 15px;
   font-weight: 600;
@@ -445,6 +450,7 @@
 
 /* Description */
 .benefit-item p {
+  font-family: 'Montserrat', sans-serif;
   font-size: 1rem;
   color: #ccc;
   line-height: 1.6;
@@ -475,6 +481,7 @@
    OUR WORK GRID
 ========================= */
 .our-work h2 {
+  font-family: 'Cinzel', serif;
  font-size: 2.5rem;
   color: #FFD700; /* yellow heading */
   margin-bottom: 40px;
@@ -510,6 +517,7 @@
    CTA
 ========================= */
 .cta {
+  
   background: linear-gradient(135deg, #111, #1C1C1C);
   text-align: center;
   padding: 80px 20px;
@@ -518,11 +526,14 @@
 }
 
 .cta h2 {
+  font-family: 'Montserrat', sans-serif;
   font-size: 2.5rem;
   margin-bottom: 20px;
+  color: #FFD700;
 }
 
 .cta p {
+   font-family: 'Cinzel', serif;
   font-size: 1.2rem;
   color: #ccc;
   margin-bottom: 30px;
@@ -587,95 +598,4 @@
 /* Allow image to grow more */
 .included-services-5 .services-image img{
   max-width: 650px;
-}
-
-/* =========================
-   OUR WORK SHOWCASE
-========================= */
-.our-work {
-  padding: 120px 20px;
-  background: #000;
-  text-align: center;
-}
-
-.our-work h2 {
-  font-size: 2.8rem;
-  color: #FFD700;
-  margin-bottom: 60px;
-  letter-spacing: 1.5px;
-}
-
-.work-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 25px;
-  max-width: 1200px;
-  margin: auto;
-}
-
-.work-box {
-  width: 260px;
-  height: 180px;
-  border-radius: 16px;
-  overflow: hidden;
-  background: rgba(0,0,0,0.85);
-  backdrop-filter: blur(2px);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
-  cursor: pointer;
-  position: relative;
-}
-
-.work-box img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.4s ease;
-}
-
-/* Hover Effect - Matches cards */
-.work-box:hover {
-  transform: translateY(-8px) scale(1.03);
-  box-shadow: 0 20px 50px rgba(255,215,0,0.3);
-}
-
-.work-box:hover img {
-  transform: scale(1.05);
-}
-
-/* Optional overlay title on hover */
-.work-box::after {
-  content: attr(data-title);
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  padding: 15px;
-  background: linear-gradient(transparent, rgba(0,0,0,0.85));
-  color: #FFD700;
-  font-weight: 600;
-  font-size: 1rem;
-  text-align: left;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.work-box:hover::after {
-  opacity: 1;
-}
-
-/* Responsive */
-@media (max-width: 900px) {
-  .work-grid {
-    gap: 20px;
-  }
-
-  .work-box {
-    width: 90%;
-    max-width: 300px;
-  }
 }
