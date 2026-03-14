@@ -211,6 +211,12 @@ a {
   pointer-events: none;  /* disable clicking */
 }
 
+.video-container video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 /* Dark overlay for readability */
 .hero::after {
   content: "";
