@@ -81,67 +81,85 @@
   margin-top:15px;
   font-size:1.2rem;
 }
-
-
-/* VIDEO SECTION */
-
-/* SECTION */
-
-.service-videos{
-  padding:120px 8%;
-  background:#000;
-  position:relative;
+/* =========================
+   VIDEO SECTION
+========================= */
+.service-videos-news {
+  display: block;
+  width: 100%;
+  padding: 60px 0;
+  background: linear-gradient(135deg, #0a0a0a, #111);
+  box-sizing: border-box;
 }
 
-/* wrapper */
-
-.video-wrapper{
-  position:relative;
+.video-wrapper {
+  width: 1090px;
+  margin: 0 auto;
+  padding: 0 3.5rem;
+  box-sizing: border-box;
 }
 
-/* BIG BACKGROUND HEADING */
-.service-videos h2{
+.video-wrapper h2 {
   font-family: 'Montserrat', sans-serif;
-  text-align: center;
   font-size: 3rem;
-  margin-bottom: 60px;
   color: #FFD700;
-
-  background-clip: text;
-  -webkit-background-clip: text;
+  margin-bottom: 2.5rem;
+  letter-spacing: 2px;
+  text-align: center;
 }
 
-/* VIDEO GRID */
-
-.video-grid{
-  position:relative;
-  z-index:2;
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:40px;
+.video-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
 }
 
-/* ELONGATED VIDEO CARD */
-
-.video-card{
-  width: 450px;
-  border-radius:16px;
-  overflow:hidden;
-  box-shadow:0 15px 50px rgba(255,215,0,0.15);
-  transition:transform .4s ease;
+.video-card {
+ width: 100% !important;
+  position: relative;
+  padding-bottom: 52% !important;   /* slightly less tall than 56.25% */
+  height: 0 !important;
+  overflow: hidden;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 215, 0, 0.15);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
+  transition: transform 0.4s ease, box-shadow 0.4s ease, border-color 0.4s ease;
+  cursor: pointer;
 }
 
-.video-card:hover{
-  transform:scale(1.05);
+.video-card iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+}
+.video-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(255,215,0,0.22), rgba(207,175,103,0.12));
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  z-index: 2;
+  border-radius: 12px;
+  pointer-events: none;
 }
 
-/* WIDESCREEN VIDEO */
-
-.video-card iframe{
-  width:100%;
-  height:320px;
-  border:none;
+.video-card:hover {
+   transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 20px 40px rgba(255, 215, 0, 0.25);
+  background-position: right center;
 }
+
+@media (max-width: 600px) {
+  .video-wrapper { padding: 0 1rem; }
+  .video-wrapper h2 { font-size: 2rem; }
+}
+
 /* =========================
    WHAT’S INCLUDED - SPLIT MODERN (YELLOW HIGHLIGHTS)
 ========================= */
