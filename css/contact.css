@@ -167,6 +167,7 @@ body {
   transform: rotate(45deg);
 }
 
+
 /* RESPONSIVE */
 @media (max-width: 900px) {
   .contact-container {
@@ -175,6 +176,9 @@ body {
   }
 }
 
+.contact-faq:hover {
+  border-color: #FFD700;
+}
 /* Success Popup */
 
 #successPopup {
