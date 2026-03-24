@@ -9,6 +9,7 @@
   justify-content: center;
   background: #0d0d0d;
   padding: 80px 20px;
+   margin-top: 80px;
 }
 
 /* Premium card */
@@ -141,7 +142,7 @@
 
 /* Founder Description */
 .founder p {
-  font-family: 'Cinzel', serif;
+  font-family: 'Montserrat', serif;
   color: #ccc;
   line-height: 1.7;
   font-size: 0.95rem;

@@ -314,6 +314,9 @@ a {
   margin-bottom: 80px;
   flex-wrap: wrap;
 }
+.team-row p{
+  font-family: 'Montserrat', serif;
+}
 
 .team-row.reverse {
   flex-direction: row-reverse;
