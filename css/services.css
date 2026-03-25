@@ -63,7 +63,7 @@
 }
 
 .hero-box h1 {
-   font-family: 'Montserrat', sans-serif;
+   font-family: 'Cinzel', serif;
   font-size: 3.5rem;
 
   background: linear-gradient(90deg,#FFD700,#CFAF67);
@@ -76,7 +76,7 @@
 }
 
 .hero-box p{
-   font-family: 'Cinzel', serif;
+   font-family: 'Montserrat', sans-serif;
   color:#ddd;
   margin-top:15px;
   font-size:1.2rem;
@@ -92,6 +92,7 @@
   box-sizing: border-box;
 }
 
+
 .video-wrapper {
   width: 1090px;
   margin: 0 auto;
@@ -100,7 +101,7 @@
 }
 
 .video-wrapper h2 {
-  font-family: 'Montserrat', sans-serif;
+ font-family: 'Cinzel', serif;
   font-size: 3rem;
   color: #FFD700;
   margin-bottom: 2.5rem;
@@ -269,7 +270,7 @@
   }
 
   .services-cards h2 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Cinzel', serif;
     text-align: center;
   }
 }
@@ -286,7 +287,7 @@
 }
 
 .process h2 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', serif;
   font-size: 3rem;
   color: #FFD700;
   margin-bottom: 80px;
@@ -343,7 +344,7 @@
 }
 
 .process-step h3 {
-  font-family: 'Cinzel', serif;
+  font-family: 'Cinzel', sans-serif;
   font-size: 1.1rem;
   font-weight: 600;
 }
@@ -404,7 +405,7 @@
 }
 
 .benefits h2 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Cinzel', serif;
   font-size: 3rem;
   margin-bottom: 80px;
   letter-spacing: 2px;
@@ -468,7 +469,7 @@
 
 /* Description */
 .benefit-item p {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Cinzel', serif;
   font-size: 1rem;
   color: #ccc;
   line-height: 1.6;
@@ -499,7 +500,7 @@
    OUR WORK GRID
 ========================= */
 .our-work h2 {
-  font-family: 'Cinzel', serif;
+ font-family: 'Montserrat', serif;
  font-size: 2.5rem;
   color: #FFD700; /* yellow heading */
   margin-bottom: 40px;
@@ -544,14 +545,14 @@
 }
 
 .cta h2 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Cinzel', serif;
   font-size: 2.5rem;
   margin-bottom: 20px;
   color: #FFD700;
 }
 
 .cta p {
-   font-family: 'Cinzel', serif;
+  font-family: 'Montserrat', serif;
   font-size: 1.2rem;
   color: #ccc;
   margin-bottom: 30px;

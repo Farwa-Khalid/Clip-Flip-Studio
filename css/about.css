@@ -38,7 +38,7 @@
 
 /* Heading */
 .about-banner h1 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Cinzel', serif;
   font-size: 3.2rem;
   margin-bottom: 25px;
 
@@ -51,7 +51,7 @@
 
 /* Paragraph styling */
 .about-banner p {
-  font-family: 'Cinzel', serif;
+  font-family: 'Montserrat', serif;
   font-size: 1.15rem;
   line-height: 1.9;
   color: #ddd;
@@ -72,7 +72,7 @@
 }
 
 .founders h2 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Cinzel', serif;
   font-size: 3rem;
   color: #FFD700;
   margin-bottom: 60px;
@@ -122,7 +122,7 @@
 
 /* Founder Name */
 .founder h3 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Cinzel', serif;
   color: #FFD700;
   margin: 15px 0 10px;
   font-size: 1.4rem;
@@ -226,7 +226,7 @@
 
 /* Card heading */
 .card h3 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Cinzel', serif;
   font-size: 1.5rem;
   margin-bottom: 15px;
   background: linear-gradient(90deg,#FFD700,#CFAF67);
@@ -238,7 +238,7 @@
 
 /* Card paragraphs */
 .card p {
-  font-family: 'Cinzel', serif;
+font-family: 'Cinzel', serif;
   color: #ddd;
   line-height: 1.6;
   font-size: 1rem;
@@ -248,6 +248,7 @@
 /* Motto span items */
 /* Motto span items with icons */
 .motto-item {
+  
   display: flex;
   align-items: center;
   gap: 12px;           /* space between icon and text */
@@ -311,13 +312,13 @@
   font-size: 3rem;
   color: #FFD700;
   margin-bottom: 10px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Cinzel', serif;
 }
 
 .counter-box p {
   font-size: 1.2rem;
   color: #fff;
-  font-family: 'Cinzel', serif;
+ font-family: 'Montserrat', serif;
   
 }
 
@@ -386,13 +387,13 @@
 }
 
 .card h4 {
- font-family: 'Montserrat', sans-serif;
+ font-family: 'Cinzel', serif;
   color: #FFD700;
   margin-bottom: 10px;
 }
 
 .card p {
-  font-family: 'Cinzel', serif;
+  font-family: 'Montserrat', serif;
   color: #ddd;
   line-height: 1.6;
   font-size: 1rem;

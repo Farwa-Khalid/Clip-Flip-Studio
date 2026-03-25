@@ -8,13 +8,14 @@
 }
 
 body {
-  font-family: 'Cinzel', sans-serif;
+  font-family: 'Montserrat', serif;
   background-color: #000;
   color: #fff;
 }
 
 h1, h2, h3 {
-  font-family: 'Montserrat', serif;
+   font-family: 'Cinzel', sans-serif;
+  
 }
 
 a {
