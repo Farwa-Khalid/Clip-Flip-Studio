@@ -30,7 +30,10 @@ document.addEventListener("DOMContentLoaded", function () {
   cards.forEach(card => {
     if (card.dataset.video) {
       card.addEventListener('click', () => {
-        videoFrame.src = card.dataset.video + "?autoplay=1";
+        const videoUrl = card.dataset.video;
+videoFrame.src = videoUrl.includes('?') 
+  ? videoUrl + "&autoplay=1" 
+  : videoUrl + "?autoplay=1";
         modal.style.display = "flex";
       });
     }

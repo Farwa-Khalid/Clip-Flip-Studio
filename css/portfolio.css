@@ -3,7 +3,7 @@
 ============================ */
 
 .portfolio-section {
-  margin-top: 100px; /* header space */
+  margin-top: 110px; /* header space */
   background-color: #000;
   padding-bottom: 80px;
 }
@@ -17,6 +17,8 @@
   padding: 25px 0;
   background: linear-gradient(135deg, #000000, #1a1a1a, #111111);
   border-bottom: 1px solid rgba(255, 215, 0, 0.2);
+  position: relative;   /* ADD THIS */
+  z-index: 101;
 }
 
 .strip-container {
@@ -26,6 +28,8 @@
   justify-content: center;
   gap: 30px;
   flex-wrap: wrap;
+  padding: 0 20px;    /* ADD THIS — prevents edge clipping on smaller screens */
+  overflow: visible;
 }
 
 .strip-btn {
