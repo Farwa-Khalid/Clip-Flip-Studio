@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const cardFilter = card.dataset.category;
 
         if (filter === "all" || cardFilter === filter) {
-          card.style.display = "block";
+          card.style.display = "";
         } else {
           card.style.display = "none";
         }
