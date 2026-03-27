@@ -596,8 +596,10 @@ a {
 }
 
 .footer-logo img {
-  height: 80px;
-  margin-bottom: 15px;
+  height: 60px;
+  width: auto;
+  transform: scale(2.5,2.5);   /* scaleX , scaleY */
+  transform-origin: center;
 }
 
 .footer-tagline {
