@@ -8,6 +8,21 @@
   padding-bottom: 80px;
 }
 
+/* Fix 1: make sure closed dropdown can't block clicks */
+.dropdown-menu {
+  pointer-events: none;
+}
+.dropdown-menu.open,
+.dropdown:hover .dropdown-menu {
+  pointer-events: auto;
+}
+
+/* Fix 2: ensure strip sits above header stacking context */
+.portfolio-strip {
+  position: relative;
+  z-index: 200; /* was 101 — now above header */
+}
+
 /* ============================
    CATEGORY STRIP
 ============================ */
@@ -75,7 +90,9 @@
 .strip-btn.active::after {
   width: 100%;
 }
-
+.hidden {
+  display: none !important;
+}
 /* ============================
    PORTFOLIO GRID
 ============================ */
