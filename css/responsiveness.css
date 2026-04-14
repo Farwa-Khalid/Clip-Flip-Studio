@@ -4,6 +4,9 @@
 
 @media (max-width: 992px) {
 
+   .video-container {
+    height: 70vh;
+  }
   /* Hero */
   .service-hero {
     height: 70vh;
@@ -77,6 +80,9 @@
 
 @media (max-width: 768px) {
 
+  .video-container {
+    height: 60vh;
+  }
   /* ── Nav ── */
   .menu-toggle {
     display: block;
@@ -255,6 +261,9 @@
 
 @media (max-width: 480px) {
 
+   .video-container {
+    height: 50vh;
+  }
   /* ── Hero ── */
   .service-hero {
     height: 50vh;
