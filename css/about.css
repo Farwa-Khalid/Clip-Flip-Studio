@@ -9,7 +9,7 @@
   justify-content: center;
   background: #0d0d0d;
   padding: 80px 20px;
-   margin-top: 80px;
+   margin-top: 20px;
 }
 
 /* Premium card */
@@ -28,6 +28,7 @@
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
   border: 1px solid rgba(255, 215, 0, 0.15);
   transition: transform 0.4s ease, box-shadow 0.4s ease;
+  margin-top: -20px;
 }
 
 /* Subtle hover lift */
