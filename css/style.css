@@ -608,16 +608,13 @@ max-width: 500px;
   margin: 5px 0;
 }
 
-.phone {
-  color:#CFAF67;
-  font-size: 16px;
-  margin-bottom: 8px;
+.phone .label,
+.phone2 .label {
+  color: white;
 }
-
-.phone2 {
+.phone .number,
+.phone2 .number {
   color: #FFD700;
-  font-size: 16px;
-  margin-bottom: 8px;
 }
 
 .footer-social {
