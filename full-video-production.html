@@ -66,14 +66,22 @@
   </div>
 </header>
 <!-- HERO -->
- <section class="service-hero">
+<section class="service-hero">
 
-  <!-- slideshow images -->
-  <div class="hero-slideshow">
-    <img src="/assets/images/dummy1.jpg" class="slide active">
-    <img src="/assets/images/dummy2.jpg" class="slide">
-    <img src="/assets/images/dummy3.jpg" class="slide">
-  </div>
+  <!-- Background Video -->
+  <div class="video-container">
+<iframe 
+  id="heroVideo"
+  width="560" 
+  height="315" 
+  src="https://www.youtube.com/embed/9u5RDSkz9Y0?autoplay=1&mute=1&enablejsapi=1"
+  title="YouTube video player" 
+  frameborder="0" 
+  allow="autoplay; encrypted-media"
+  allowfullscreen>
+</iframe>
+</div>
+
 
   <!-- overlay content -->
   <div class="hero-box">
@@ -95,9 +103,9 @@
 
     <div class="video-card">
 <iframe
- width="560"
+  width="560"
   height="315"
-  src="https://www.youtube.com/embed/itku-66n7Oc?autoplay=1&mute=1&loop=1&playlist=itku-66n7Oc&controls=0&modestbranding=1&playsinline=1"
+  src="https://www.youtube.com/embed/2C2x60LDQ_k?autoplay=1&mute=1&loop=1&playlist=2C2x60LDQ_k&controls=0&modestbranding=1&playsinline=1"
   frameborder="0"
   allow="autoplay; encrypted-media"
   allowfullscreen>
@@ -124,14 +132,7 @@ allowfullscreen>
 </iframe>
     </div>
 
-    <div class="video-card">
-<iframe
-src="https://www.youtube.com/embed/hZJDSn2Ab-8?autoplay=1&mute=1&loop=1&playlist=hZJDSn2Ab-8&controls=0&modestbranding=1&playsinline=1"
-frameborder="0"
-allow="autoplay; encrypted-media;"
-allowfullscreen>
-</iframe>
-      </div>
+
 
   </div>
 </div>
@@ -271,8 +272,10 @@ hello@clipflipstudio.com
 <script src="js/services_dropdown.js"></script>
   <script src="js/sequential_animation.js"></script>
   <script src="js/benefit-card.js"></script>
+   <script src="js/onclick_audio.js"></script>
   <script src="js/menu_toggle.js"></script>
- 
+ <script src="https://www.youtube.com/iframe_api"></script>
+
 
   <script>
   lucide.createIcons();
