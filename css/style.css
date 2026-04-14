@@ -814,3 +814,7 @@ max-width: 500px;
   color: #FFD700;
   cursor: pointer;
 }
+.site-header {
+  position: relative;
+  z-index: 9999;  /* ✅ THIS FIXES YOUR ISSUE */
+}
