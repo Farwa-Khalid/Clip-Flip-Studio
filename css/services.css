@@ -14,47 +14,6 @@
   justify-content:center;
 }
 
-/* slideshow container */
-
-.hero-slideshow{
-  position:absolute;
-  width:100%;
-  height:100%;
-  top:0;
-  left:0;
-}
-
-/* images */
-
-.slide{
-  position:absolute;
-  width:100%;
-  height:100%;
-  object-fit:cover;
-  opacity:0;
-  transition: opacity 1.5s ease;
-}
-
-/* active slide */
-
-.slide.active{
-  opacity:1;
-}
-
-/* dark overlay */
-
-.service-hero::after{
-  content:"";
-  position:absolute;
-  width:100%;
-  height:100%;
-  background: rgba(0,0,0,0.55);
-  top:0;
-  left:0;
-  z-index: 1;
-}
-
-/* hero text */
 
 .hero-box{
   position:relative;
