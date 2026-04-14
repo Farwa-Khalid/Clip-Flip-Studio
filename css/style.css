@@ -798,3 +798,19 @@ max-width: 500px;
 .service-card:hover {
   transform: translateY(-10px);
 }
+
+
+
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 26px;
+  color: #FFD700;
+  cursor: pointer;
+}
