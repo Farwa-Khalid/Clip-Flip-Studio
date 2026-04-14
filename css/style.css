@@ -221,38 +221,8 @@ a {
 }
 
 /* Dark overlay for readability */
-.hero::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(0,0,0,0.6);
-  z-index: 1;
-}
 
-.hero-overlay {
-  position: relative;
-  z-index: 2;
-}
 
-.hero-overlay h1 {
-  font-size: 3rem;
-  margin-bottom: 10px;
-}
-
-.hero-overlay .motto {
-  font-size: 1.2rem;
-  color: #fff;
-  max-width: 700px;
-}
-.hero-overlay img {
-  max-width: 300px;        /* Maximum size of the logo */
-  width: 80%;               /* Responsive width */
-  height: auto;             /* Maintain aspect ratio */
-  display: block;
-  margin: 0 auto;  
-  opacity: 50%;
-
-}
 
 /* =========================
    4. WHAT WE DO (Text)
