@@ -62,6 +62,7 @@ a {
   list-style: none;
   display: flex;
   gap: 30px;
+   font-family: 'Montserrat', sans-serif;
 }
 
 .site-header .nav ul li a {
